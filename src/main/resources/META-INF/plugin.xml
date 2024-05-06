@@ -1,0 +1,19 @@
+<idea-plugin>
+
+    <id>com.oscngl.java-progress-bar</id>
+    <name>Java Progress Bar</name>
+    <vendor email="oscngl@gmail.com">Ömer Said Çengel</vendor>
+
+    <description><![CDATA[
+    Replaces your IDE's default progress bars with Java Progress Bar.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <applicationListeners>
+        <listener class="ProgressBarComponent" topic="com.intellij.ide.ui.LafManagerListener"/>
+        <listener class="ProgressBarComponent" topic="com.intellij.ide.plugins.DynamicPluginListener"/>
+        <listener class="ProgressBarComponent" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+    </applicationListeners>
+
+</idea-plugin>
